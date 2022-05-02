@@ -26,14 +26,26 @@ h1 {
 p {
     
     position: relative;
-    left: 12px;
+ 
 }
 h2 {
    
     position: relative;
-    font-size: 17px;
-    left: 12px;
+    font-size: 30px;
+    text-shadow: 5px 10px 10px black;
+    color: white;
+    font-weight: bold;
+   
 }
+h3 {
+   
+    position: relative;
+    font-size: 20px;
+    text-shadow: 5px 10px 10px black;
+    color: white;
+    font-weight: bold;
+   
+ }
 .team-card {
     width: 250px;
     height: 50vh;
@@ -41,6 +53,7 @@ h2 {
     background-color: tan;
     box-shadow: 2px 5px 5px black;
     border-radius: 20px;
+    text-align: center;
 }
 .card-container {
     position: absolute;

@@ -188,8 +188,9 @@ for (let i = 1; i < finalTeamArray.length; i++) {
             <h3>${finalTeamArray[i].title}</h3>
         </div>
         <div class="card-bottom">
-            <p>Employee ID: ${finalTeamArray[i].id}</p>
+        <button onclick="window.location.href='mailto:${finalTeamArray[i].email}';"> Email Jill</button>
             <p>Email: <a href="mailto:${finalTeamArray[i].email}">${finalTeamArray[i].email}</a>></p>
+            <p>Employee ID: ${finalTeamArray[i].id}</p>
     `
     if (finalTeamArray[i].officeNumber) {
         htmlEnd += `
