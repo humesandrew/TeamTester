@@ -3,15 +3,13 @@ html, body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .banner-bar {
-    background-color: rgba(53, 124, 109, 0.842);
+    background-color: purple;
     width: 100%;
     color: #ffffff;
     display: flex;
@@ -19,34 +17,31 @@ body {
     align-items: center;
     height: 20vh;
 }
-
 h1 {
-    font-family: Bebas Neue;
-    font-size: 8vw;
+   
+    font-weight: bold;
+    font-size: 6vw;
+    text-shadow: 2px 5px 5px black;
 }
-
 p {
-    font-family: 'Roboto Condensed', sans-serif;
+    
     position: relative;
     left: 12px;
 }
-
 h2 {
-    font-family: 'Roboto Condensed', sans-serif;
+   
     position: relative;
     font-size: 17px;
     left: 12px;
 }
-
 .member-card {
     width: 250px;
-    height: 34vh;
+    height: 50vh;
     margin-bottom: 5vh;
-    background-color: rgb(240, 238, 238);
+    background-color: tan;
     box-shadow: 2px 5px 5px black;
-    border-top-left-radius: 10px;
+    border-radius: 20px;
 }
-
 .card-container {
     position: absolute;
     top: 26vh;
@@ -55,14 +50,13 @@ h2 {
     justify-content: space-around;
     width: 60vw;
 }
-
 .card-top {
-    background-color: rgb(228, 174, 76);
-    border: 2px solid rgb(228, 174, 76);
+    background-color: green;
+    border: 2px solid green;
     width: 246px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
-
 .card-bottom {
     display: flex;
     flex-direction: column;

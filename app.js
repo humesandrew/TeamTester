@@ -97,7 +97,7 @@ for (let i = 1; i < finalTeamArray.length; i++) {
     `
     if (finalTeamArray[i].officeNumber) {
         object += `
-        <p>${finalTeamArray[i].officeNumber}</p>
+        <p>Office Number: ${finalTeamArray[i].officeNumber}</p>
         `
     }
     if (finalTeamArray[i].github) {
@@ -115,7 +115,7 @@ for (let i = 1; i < finalTeamArray.length; i++) {
     </div>
     `
     htmlArray.push(object);
-    fs.writeFile(`./generated-html/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err) {
+    fs.writeFile(`./html/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err) {
         
     })
 
