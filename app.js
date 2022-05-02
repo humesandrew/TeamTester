@@ -4,6 +4,7 @@ const style = require("./style/css")
 
 const Manager = require("./lib/manager")
 const Employee = require("./lib/employee")
+const Engineer = require("./lib/engineer")
 
 
 let finalTeamArray = [];
@@ -50,11 +51,73 @@ function addManager() {
             const teamMember = new Manager(name, id, email, officeNumber)
             finalTeamArray.push(teamMember)
             console.log(finalTeamArray)
-            // addTeamMembers();
-            compileTeam();
+            addTeamMembers();
+            
         });
 
 };
+
+function addTeamMembers() {
+    inquirer.prompt([
+        {
+            type: "list",
+            message: "Would you like to add more team members?",
+            choices: ["Add an engineer", "Yes, add an intern", "No thanks. That's my whole team."],
+            name: "addMemberData"
+        }
+    ])
+
+        .then(function (data) {
+
+
+            //add any team member screen// 
+            switch (data.addMemberData) {
+                case "Add an engineer":
+                    addEngineer();
+                    break;
+
+                // case "Add an intern":
+                //     addIntern();
+                //     break;
+                case "No thanks. That's my whole team.":
+                    compileTeam();
+                    break;
+            }
+        });
+}
+
+function addEngineer() {
+    inquirer.prompt([
+        {
+            message: "What is the engineer's name?",
+            name: "name"
+        },
+        {
+            message: "What is the engineer's email?",
+            name: "email"
+        },
+        {
+            message: "What is this engineer's Github profile name?",
+            name: "github"
+        }
+    ])
+
+        .then(function (data) {
+            const name = data.name
+            const id = finalTeamArray.length + 1
+            const email = data.email
+            const github = data.github
+            const teamMember = new Engineer(name, id, email, github)
+            finalTeamArray.push(teamMember)
+           
+
+            ///loop back to add any team member// 
+            addTeamMembers()
+        });
+
+};
+
+
 
 //starting rendering component//
 
