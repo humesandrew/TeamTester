@@ -26,6 +26,7 @@ h1 {
 p {
     
     position: relative;
+    font-weight: bold;
  
 }
 h2 {
@@ -46,6 +47,7 @@ h3 {
     font-weight: bold;
    
  }
+ 
 .team-card {
     width: 250px;
     height: 50vh;
@@ -55,6 +57,18 @@ h3 {
     border-radius: 20px;
     text-align: center;
 }
+
+button {
+    font-weight: bold;
+height: 5vh;
+}
+
+
+button:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
 .card-container {
     position: absolute;
     top: 26vh;

@@ -188,9 +188,9 @@ for (let i = 1; i < finalTeamArray.length; i++) {
             <h3>${finalTeamArray[i].title}</h3>
         </div>
         <div class="card-bottom">
-        <button onclick="window.location.href='mailto:${finalTeamArray[i].email}';"> Email Jill</button>
-            <p>Email: <a href="mailto:${finalTeamArray[i].email}">${finalTeamArray[i].email}</a>></p>
-            <p>Employee ID: ${finalTeamArray[i].id}</p>
+        <button onclick="window.location.href='mailto:${finalTeamArray[i].email}';"> Email ${finalTeamArray[i].name} (Employee ID: ${finalTeamArray[i].id})</button>
+       
+          
     `
     if (finalTeamArray[i].officeNumber) {
         htmlEnd += `
@@ -199,7 +199,7 @@ for (let i = 1; i < finalTeamArray.length; i++) {
     }
     if (finalTeamArray[i].github) {
         htmlEnd += `
-        <p>GitHub: <a href="https://github.com/${finalTeamArray[i].github}">${finalTeamArray[i].github}</a></p>
+        <button onclick="window.location.href='https://github.com/${finalTeamArray[i].github}';"> Github Account ${finalTeamArray[i].github}</button>
         `
     }
     if (finalTeamArray[i].school) {
