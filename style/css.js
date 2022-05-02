@@ -34,7 +34,7 @@ h2 {
     font-size: 17px;
     left: 12px;
 }
-.member-card {
+.team-card {
     width: 250px;
     height: 50vh;
     margin-bottom: 5vh;
