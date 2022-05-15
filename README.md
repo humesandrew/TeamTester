@@ -11,10 +11,10 @@
   - [Questions](#questions)
 
   ## Installation
-    You will need to run npm install. ;
+    You will need to run npm install. 
 
   ## Usage
-  [Click for video walkthrough.](https://watch.screencastify.com/v/oNNiv6lZvPtvtPcSyiZS)
+  [Click for video walkthrough.](https://share.vidyard.com/watch/8m5vcZ2rzW5BdTri7vs555?)
     
     Type node app.js to run
 
