@@ -6,7 +6,6 @@
   ## Table of Contents (Optional)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
   - [License](#license)
   - [Questions](#questions)
 
@@ -21,10 +20,10 @@
   ## License
     This project is licensed under humesandrew.
 
-  ## Contributing
-    
-
   ## Questions
+  
+  [Click for Github repository.](https://github.com/humesandrew/TeamTester)
+  
   [Click for GitHub Profile.](https://github.com/humesandrew)
-
+  
   [Click to email.](mailto:humes.andrew@gmail.com)
