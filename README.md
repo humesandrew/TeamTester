@@ -15,7 +15,7 @@
 
   ## Usage
   [Click for video walkthrough.](https://share.vidyard.com/watch/8m5vcZ2rzW5BdTri7vs555?)
-    
+ ![Screenshot](/teamtesterfull.jpg?raw=true "Screenshot")
     Type node app.js to run
 
   ## License
